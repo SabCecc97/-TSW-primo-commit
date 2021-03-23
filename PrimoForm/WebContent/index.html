@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html>
+<head>
+<style>
+div.background {
+ background-image: url('./imgs/giappone1.jpg');
+    border: 2px solid black;
+}
+div.transbox {
+    margin: 30px;
+    background-color:black;   
+}
+div.transbox h1 {
+    margin: 5%;
+    font-weight: canvas;
+    color: white;
+}
+</style>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link rel="icon" type="image/x-icon" href="./imgs/echo.png">
+ <link href="./css/style.css">
+ 
+ <title>Gadget Giapponesi</title>
+</head>
+
+<body>
+<div class="background">
+  <div class="transbox">
+<h1 style="text-align:center;"> JAPANESE GADGET SHOP <br><br>
+Per vivere il Giappone ed amarlo</h1>
+</div>
+</div>
+<h1>FORM SU GADGET GIAPPONESI</h1>
+
+<h3> compila questo form per iscriverti e comprare i gadget</h3>
+
+<form method="post" action="recho" name="echo">
+	<fieldset>
+		<br>
+    	<legend>Acquista:</legend>
+          <label for="gadget">Scegli i gadget:</label>
+          <br>
+            <select name="scelta" id="scelta">
+              <option value="Maneki Neko portachiavi">Gatto Neko portachiavi</option>
+              <option value="felpa Tokyo" selected>felpa Tokyo</option>
+              <option value="calamite del posto">Calamite del posto</option>
+              <option value="cartolina Kyoto">cartolina di Kyoto</option>
+              <option valie="borsa con monte Fuji"> Borsa con monte Fuji</option>
+            </select>
+        <br>    
+	<fieldset>
+  <label for="nome">Nome</label><br>
+  <input type="text" name="nome" value="" 
+  	placeholder="inserisci nome" maxlength="10" autofocus required/>
+  <br><br>
+  <label for="cognome">Cognome </label><br>
+  <input type="text" name="cognome" value="" 
+    placeholder="inserisci cognome" required/>
+  <br>
+  <label for="stato">Stato sociale: </label><br>
+  <input type="radio" name="stato" value="single" checked> single<br>
+  <input type="radio" name="stato" value="coniuge"> coniuge<br>
+  <input type="radio" name="stato" value="divorziat*"> divorziat*
+  <br><br>
+  <label for="cf/piva">Codice Fiscale/partita iva</label>
+  <input type="text"name="cf/piva" value=""
+  	placeholder="inserisci codice fiscale/piva" required/>
+  	<br><br>
+  <label for="password">password</label><br>
+  <input type="text"name="password" value=""
+  	placeholder="inserisci password" required/>
+  	<br><br>
+  <label for="email">email</label><br>
+  <input type="text"name="email" value=""
+  	placeholder="inserisci email" required/>
+  	<br>
+  		
+  <label for="info email">vuoi ricevere email informative? </label><br>
+  <input type="checkbox" name="list" value="SI">Si<br>
+  <input type="checkbox" name="list" value="NO">No<br>    
+     
+  <br>
+  </fieldset>
+  
+  <fieldset>
+  	<label for="indirizzo">Indirizzo: </label><br>
+  	<input type="text" name="indirizzo" value=""
+  		placeholder="inserisci indirizzo" required/>
+  	<br>
+  		
+  <label for="interno">Interno:</label><br>
+  	<input type="text" name="Interno" value=""
+  		placeholder="inserisci interno:" required/>
+  	<br>
+  	
+  	<label for="cap"> Città: </label><br>
+  	 <input type="text" name="cap" value=""
+  	 	placeholder="inserisci città:" required/>
+  	 <br>
+  	
+  	<label for="provincia"> Provincia: </label><br>
+  	 <input type="text" name="provincia" value=""
+  	 	placeholder="inserisci provincia:" required/>
+  	 <br>
+  </fieldset>
+  
+  <fieldset>
+  	
+  	<label for="numero carta di credito">Numero Carta Di Credito: </label><br>
+  	<input type="text" name="numero carta di credito" value=""
+  		placeholder="inserisci carta di credito" required/>
+  		<br>
+  		
+  <label for="Data Di Scadenza">Data Di Scadenza</label><br>
+  	<input type="date" name="Data di scadenza" value=""
+  		placeholder="inserisci data di scadenza:" required/>
+  	<br><br>	
+  		
+  	<label for="codice segreto"> Codice Segreto: </label><br>
+  	 <input type="text" name="cap" value=""
+  	 	placeholder="inserisci codice segreto" required/>
+  	 <br>
+  	
+  </fieldset>
+  <textarea name= "Commenti" rows="10" cols="10"></textarea>
+  
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
